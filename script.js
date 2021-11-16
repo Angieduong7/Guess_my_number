@@ -1,8 +1,5 @@
 'use strict';
 
-// document.querySelector('.message').textContent = 'Correct Number';
-// document.querySelector('.guess').value = 23;
-
 let secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let score = 20;
@@ -40,15 +37,6 @@ document.querySelector('.check').addEventListener('click', function () {
       display('Game is over');
       document.querySelector('.score').textContent = 0;
     }
-    // } else {
-    //   if (score > 1) {
-    //     document.querySelector('.message').textContent = 'Number is too low!';
-    //     score--;
-    //     document.querySelector('.score').textContent = score;
-    //   } else {
-    //     document.querySelector('.message').textContent = 'Game is over';
-    //     document.querySelector('.score').textContent = 0;
-    //   }
   }
 });
 
